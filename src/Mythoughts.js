@@ -18,7 +18,7 @@ const styleSched = makeStyles (()=>({
         border:'2px solid black',
         borderRadius: '15px',
         width:'80vw'
-    }
+    },
 }))
 
 
@@ -49,13 +49,16 @@ const Mythoughts = () => {
     };
 
     const handleDeleteEach = (e) => {
-        const numId = parseInt(e.target.value);
-        const eachDelete = [...infoEntry].filter((item) => {
-            return item.id !== numId;
-            })
-        alert(numId);
-        alert(eachDelete);
-        setInfoEntry(eachDelete)
+        if (window.confirm("Do you really want to delete this entry?")) {
+            const numId = parseInt(e.target.value);
+            const eachDelete = [...infoEntry].filter((item) => {
+                return item.id !== numId;
+                })
+            setInfoEntry(eachDelete);
+        }
+        else {
+                return false;
+        }
     };
 
     const handleProductSubmit = (e) => {
@@ -74,6 +77,7 @@ const Mythoughts = () => {
         setTaskDay('');
         setdateSelect('');     
     } 
+
 
     useEffect(()=>{
         localStorage.setItem('dailythoughts', JSON.stringify(infoEntry));},[infoEntry]);
@@ -115,7 +119,7 @@ const Mythoughts = () => {
                             <TableBody >
                                 {infoEntry.map((content)=> (
                                     <TableRow key={content.id}>
-                                        <TableCell ><input type='checkbox'></input></TableCell>
+                                        <TableCell ><input type='checkbox' ></input></TableCell>
                                         <TableCell >{content.taskDay}</TableCell>
                                         <TableCell>{content.dateSelect}</TableCell>
                                         <TableCell ><Button value={content.id} onClick={handleDeleteEach}>Delete</Button></TableCell>
