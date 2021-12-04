@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
         <h1 style={{marginTop:'0', padding:'3%'}}>Sample of my Daily Schedules</h1>
-        <Mytask/><br/>
+        <Mytask/><br/><br/>
         <Mythoughts/>
     </div>
   );

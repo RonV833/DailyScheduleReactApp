@@ -119,7 +119,7 @@ const Mythoughts = () => {
                             <TableBody >
                                 {infoEntry.map((content)=> (
                                     <TableRow key={content.id}>
-                                        <TableCell ><input type='checkbox' ></input></TableCell>
+                                        <TableCell ><input type='checkbox' value={content.id}></input></TableCell>
                                         <TableCell >{content.taskDay}</TableCell>
                                         <TableCell>{content.dateSelect}</TableCell>
                                         <TableCell ><Button value={content.id} onClick={handleDeleteEach}>Delete</Button></TableCell>
