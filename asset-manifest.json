@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/DailyScheduleReactApp/static/css/main.7ce7ad95.chunk.css",
+    "main.js": "/DailyScheduleReactApp/static/js/main.646612d3.chunk.js",
+    "main.js.map": "/DailyScheduleReactApp/static/js/main.646612d3.chunk.js.map",
+    "runtime-main.js": "/DailyScheduleReactApp/static/js/runtime-main.474221d5.js",
+    "runtime-main.js.map": "/DailyScheduleReactApp/static/js/runtime-main.474221d5.js.map",
+    "static/js/2.c1fedcf4.chunk.js": "/DailyScheduleReactApp/static/js/2.c1fedcf4.chunk.js",
+    "static/js/2.c1fedcf4.chunk.js.map": "/DailyScheduleReactApp/static/js/2.c1fedcf4.chunk.js.map",
+    "index.html": "/DailyScheduleReactApp/index.html",
+    "static/css/main.7ce7ad95.chunk.css.map": "/DailyScheduleReactApp/static/css/main.7ce7ad95.chunk.css.map",
+    "static/js/2.c1fedcf4.chunk.js.LICENSE.txt": "/DailyScheduleReactApp/static/js/2.c1fedcf4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.474221d5.js",
+    "static/js/2.c1fedcf4.chunk.js",
+    "static/css/main.7ce7ad95.chunk.css",
+    "static/js/main.646612d3.chunk.js"
+  ]
+}
